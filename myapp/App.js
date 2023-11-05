@@ -14,8 +14,8 @@ export default function App() {
         "Hey there, we doing it.",
         // Custom buttons
         [
-          { Text: "Yes"},
-          { Text: "No"}
+          { text: "Yes"},
+          { text: "No"}
         ]
         )}/>
     </SafeAreaView>
