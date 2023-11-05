@@ -8,8 +8,11 @@ export default function App() {
       // color="green"
       title="Click me"
       onPress = {() => Alert.alert(
+        // Title
         "My button", 
-        "Hey there, we doing.",
+        // Message
+        "Hey there, we doing it.",
+        // Custom buttons
         [
           { Text: "Yes"},
           { Text: "No"}
