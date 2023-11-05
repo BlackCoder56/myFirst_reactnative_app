@@ -5,7 +5,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       {/* <Text>Hello World</Text> */}
-      <Image source={{
+      <Image fadeDuration={1000} borderRadius={4} source={{        
         width: 200,
         height:300,      
         uri:"https://picsum.photos/200/300",}} />
