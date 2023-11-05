@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableWithoutFeedback, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity, Button, Alert, View, SafeAreaView, Image } from 'react-native';
+import { StyleSheet, Text, TouchableWithoutFeedback, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity, Platform, Button, Alert, View, SafeAreaView, Image } from 'react-native';
 
 export default function App() {
   return (
@@ -28,5 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+    // Platform differentiates between OS (Android or IOS)
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
 });
