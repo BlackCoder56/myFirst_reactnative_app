@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableWithoutFeedback, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity, Platform, Button, Alert, View, SafeAreaView, Image } from 'react-native';
+import { StyleSheet, Text, TouchableWithoutFeedback, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity,Platform, Button, Alert, View, SafeAreaView, Image } from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>      
+    
       <Button             
       // color="green"
       title="Click me"
@@ -11,13 +12,19 @@ export default function App() {
         // Title
         "My button", 
         // Message
-        "Hey there, we doing it.",
+        "Hey there, this is my message.",
         // Custom buttons
         [
           { text: "Yes"},
           { text: "No"}
         ]
-        )}/>
+        )}/>        
+      {/* <Button 
+        color="#841584"           
+      // color="green"
+      title="Prompt me"
+      onPress={() => Alert.prompt("Title", "Enter")}
+      /> */}
     </SafeAreaView>
   );
 }
