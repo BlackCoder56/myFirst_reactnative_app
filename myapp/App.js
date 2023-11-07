@@ -27,12 +27,7 @@ export default function App() {
         backgroundColor: "red",
         flex: 1,
       }}>
-        <Text style={{fontWeight: 'bold',color: 'white'}
-          }>
-         I am bold
-         <Text style={{color: 'red'}}>and red
-         </Text>
-    </Text>
+        
       </View>
         <View style={{
         backgroundColor: "black",
