@@ -4,15 +4,53 @@ import { StyleSheet, Text, TouchableWithoutFeedback, TouchableNativeFeedback, To
 export default function App() {
   
   return (
-    <SafeAreaView style={styles.container}>      
-      <view>  
-        style={{
-          backgroundColor: "dodgerblue",
-          width: "100%",
-          height: "30%"
-        }}      
-      </view>
-    </SafeAreaView>
+    
+    <View style={{
+        backgroundColor: "#fff",
+        flex: 1,
+        flexDirection: 'row-reverse'
+    }}
+    >
+       <View style={{
+        backgroundColor: "white",
+        flex: 0.2,
+      }}/>
+      <View style={{
+        backgroundColor: "black",
+        flex: 1,
+      }}/>
+      <View style={{
+        backgroundColor: "yellow",
+        flex: 1,
+      }}/>
+      <View style={{
+        backgroundColor: "red",
+        flex: 1,
+      }}>
+        <Text style={{fontWeight: 'bold',color: 'white'}
+          }>
+         I am bold
+         <Text style={{color: 'red'}}>and red
+         </Text>
+    </Text>
+      </View>
+        <View style={{
+        backgroundColor: "black",
+        flex: 1,
+      }}/>
+      <View style={{
+        backgroundColor: "yellow",
+        flex: 1,
+      }}/>
+      <View style={{
+        backgroundColor: "red",
+        flex: 1,
+      }}/>
+      <View style={{
+        backgroundColor: "white",
+        flex: 0.2,
+      }}/>
+    </View>
   );
 }
 
