@@ -6,46 +6,53 @@ export default function App() {
   return (
     
     <View style={{
-        backgroundColor: "#fff",
-        flex: 1,
-        flexDirection: 'row-reverse'
+        backgroundColor: "#fff",        
+        padding: 40,
+        flexDirection: 'row',  
+        justifyContent: 'space-between'
     }}
-    >
-       <View style={{
-        backgroundColor: "white",
-        flex: 0.2,
-      }}/>
+    >      
       <View style={{
         backgroundColor: "black",
-        flex: 1,
-      }}/>
-      <View style={{
-        backgroundColor: "yellow",
-        flex: 1,
-      }}/>
-      <View style={{
-        backgroundColor: "red",
-        flex: 1,
+        width: 80,
+        height: 50,
       }}>
-        
+        <Text style={{
+          color: '#fff',
+          fontSize: 20,
+          fontWeight: 'bold',
+          margin: 10,
+          marginLeft: 12,
+          
+        }}>Black</Text>
       </View>
-        <View style={{
-        backgroundColor: "black",
-        flex: 1,
-      }}/>
       <View style={{
         backgroundColor: "yellow",
-        flex: 1,
-      }}/>
+        width: 80,
+        height: 50,
+      }}>
+        <Text style={{
+          color: "#000",
+          fontSize: 20,     
+          margin: 10,     
+          fontWeight: 'bold',        
+          textAlignVertical:'center',
+        }}>Yellow</Text>
+      </View>
       <View style={{
         backgroundColor: "red",
-        flex: 1,
-      }}/>
-      <View style={{
-        backgroundColor: "white",
-        flex: 0.2,
-      }}/>
-    </View>
+        width: 80,
+        height: 50,
+      }}>
+        <Text style={{
+          color: '#fff',
+          fontSize: 20,
+          fontWeight: 'bold',
+          margin: 10,
+          marginLeft: 20,
+        }}>Red</Text>
+      </View>      
+    </View>   
   );
 }
 
